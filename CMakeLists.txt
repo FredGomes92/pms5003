@@ -7,7 +7,6 @@ add_library(pms5003 SHARED pms5003.c)
 # Set the version info
 set_target_properties(pms5003 PROPERTIES
     VERSION ${PROJECT_VERSION}
-    SOVERSION 0
     PUBLIC_HEADER pms5003.h
 )
 
