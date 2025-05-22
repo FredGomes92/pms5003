@@ -3,6 +3,10 @@
 
 #include <stdint.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #define PMS5003_EXPECTED_BYTES 32
 
 typedef union pms5003_data_block {
@@ -62,5 +66,7 @@ void set_wake_mode();
 void flush_uart();
 void reset_uart(const char *device, int baud);
 
-
+#ifdef __cplusplus
+}
+#endif
 #endif // PMS5003_H
