@@ -6,6 +6,7 @@ add_library(pms5003 SHARED pms5003.c)
 
 # Set the version info
 set_target_properties(pms5003 PROPERTIES
+    POSITION_INDEPENDENT_CODE ON #-fPIC
     VERSION ${PROJECT_VERSION}
     PUBLIC_HEADER pms5003.h
 )
